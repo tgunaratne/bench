@@ -21,6 +21,11 @@
   become: yes
   become_user: root
 
+- name: Change Bench DB Host
+  command: bench set-mariadb-host 10.148.0.7
+  args:
+    chdir: '{{ bench_path }}'
+
 - name: Restart the bench
   command: bench restart
   args:
