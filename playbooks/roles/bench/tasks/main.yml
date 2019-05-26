@@ -65,7 +65,7 @@
 
   # Setup MariaDB host
   - name: Setup MariaDB host
-    command: bench set-mariadb-host 10.148.0.7
+    command: bench set-mariadb-host 10.148.0.13
     args:
       chdir: "{{ bench_path }}"
 
